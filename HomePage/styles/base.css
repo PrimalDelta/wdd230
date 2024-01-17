@@ -1,0 +1,91 @@
+/* Importing Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+
+
+/* Base styles */
+body {
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+/* Utility classes for alignment */
+.center {
+    text-align: center;
+}
+
+/* Header styles */
+header {
+    background-color: #00457C; /* Adjust color to your preference */
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Profile Picture styles */
+#profilePicture {
+    width: 200px;
+    height: auto;
+    margin-right: 20px;
+}
+
+header h1 {
+    margin: 0;
+    padding: 0;
+    font-weight: 700;
+}
+
+/* Navigation styles */
+nav ul {
+    list-style-type: none; /* Removes bullets */
+    padding: 0;
+    background-color: #000; /* Adjust color to your preference */
+    text-align: center;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline; /* Inline list items for horizontal layout */
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+/* Main content styles */
+main {
+    max-width: 800px; /* Limited width */
+    margin: 20px auto; /* Centering */
+    padding: 20px;
+    background-color: #fff; /* Adjust color to your preference */
+}
+
+/* Card styles for sections */
+.card {
+    background-color: #E6E6E6; /* Adjust color to your preference */
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+/* Card styles for Learning Activities using CSS Grid */
+.card {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-gap: 1rem;
+}
+
+/* Footer styles */
+footer p {
+    background-color: #333; /* Adjust color to your preference */
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    margin: 0;
+}
