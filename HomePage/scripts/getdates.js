@@ -13,3 +13,8 @@ function setDateInformation() {
 
 // Call the function to set the date information
 setDateInformation();
+
+
+
+// Call the function to fetch the weather information
+fetchWeatherInformation();
