@@ -68,16 +68,40 @@ main {
 
 /* Card styles for sections */
 .card {
-    background-color: #E6E6E6; /* Adjust color to your preference */
-    padding: 1rem;
-    margin-bottom: 1rem;
+    background-color: #e6e6e6; /* Light grey background, adjust color as needed */
+    border: 1px solid #000; /* Black border */
+    border-radius: 10px; /* Rounded corners */
+    padding: 20px; /* Spacing inside the card */
+    max-width: 600px; /* Max width of the card, adjust as needed */
+    margin: 20px auto; /* Center the card */
 }
 
-/* Card styles for Learning Activities using CSS Grid */
-.card {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    grid-gap: 1rem;
+.card h3 {
+    background-color: #0057b7; /* Blue background for the title, adjust color as needed */
+    color: #fff; /* White text color */
+    padding: 10px; /* Spacing inside the title area */
+    border-radius: 8px 8px 0 0; /* Rounded corners on the top */
+    margin: -20px -20px 20px -20px; /* Aligns the title background with the card edges */
+}
+
+.card ul {
+    list-style: none; /* Remove default list styling */
+    padding: 0; /* Remove default padding */
+    margin: 0; /* Remove default margin */
+}
+
+.card li {
+    padding: 5px 0; /* Spacing between list items */
+    border-bottom: 1px solid #ccc; /* Light grey border between items */
+}
+
+.card li:last-child {
+    border-bottom: none; /* Remove border from the last item */
+}
+
+.card a {
+    text-decoration: none; /* Remove underline from links */
+    color: #000; /* Set link color, adjust as needed */
 }
 
 /* Footer styles */
