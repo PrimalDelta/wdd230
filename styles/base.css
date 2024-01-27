@@ -96,17 +96,17 @@ main {
 }
 
 .card li:last-child {
-    border-bottom: none; /* Remove border from the last item */
+    border-bottom: none;
 }
 
 .card a {
-    text-decoration: none; /* Remove underline from links */
-    color: #000; /* Set link color, adjust as needed */
+    text-decoration: none;
+    color: #000;
 }
 
 /* Footer styles */
 footer p {
-    background-color: #333; /* Adjust color to your preference */
+    background-color: #333; 
     color: #fff;
     text-align: center;
     padding: 1rem 0;
