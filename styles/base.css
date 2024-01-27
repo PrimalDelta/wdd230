@@ -39,23 +39,6 @@ header h1 {
 }
 
 /* Navigation styles */
-nav ul {
-    list-style-type: none; 
-    padding: 0;
-    background-color: #000;
-    text-align: center;
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-}
-
-@media (min-width: 768px) {
-    nav ul {
-        flex-direction: row;
-        justify-content: space-between;
-    }
-}
-
 nav ul li {
     display: inline;
     margin-right: 20px;
@@ -73,22 +56,6 @@ main {
     margin: 20px auto;
     padding: 20px;
     background-color: #fff;
-}
-
-main section {
-    display: flex;
-    flex-direction: column;
-}
-
-@media (min-width: 768px) {
-    main {
-        display: flex;
-        flex-wrap: wrap;
-    }
-}
-
-main section {
-    flex: 1 1 50%;
 }
 
 /* Card styles for sections */
@@ -110,14 +77,14 @@ main section {
 }
 
 .card ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
+    list-style: none; /* Remove default list styling */
+    padding: 0; /* Remove default padding */
+    margin: 0; /* Remove default margin */
 }
 
 .card li {
-    padding: 5px 0;
-    border-bottom: 1px solid #ccc;
+    padding: 5px 0; /* Spacing between list items */
+    border-bottom: 1px solid #ccc; /* Light grey border between items */
 }
 
 .card li:last-child {
