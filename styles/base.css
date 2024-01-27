@@ -113,7 +113,19 @@ footer p {
     margin: 0;
 }
 
-.facebook-link img {
-    height: 10px;
-    width: 24px;
+.social-link {
+    text-decoration: none; /* Removes underline */
+    color: #ffffff; /* White text */
+    margin-top: 10px; /* Spacing from other text */
+    display: inline-block; /* For proper alignment */
+}
+
+.social-link img {
+    vertical-align: middle; /* Aligns image with text */
+    margin-right: 8px; /* Space between image and text */
+}
+
+/* Specific styles for Facebook link */
+.facebook-link {
+    color: #3b5998; /* Facebook blue color for the text */
 }
