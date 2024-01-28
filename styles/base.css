@@ -43,16 +43,18 @@ nav ul {
     list-style-type: none; /* Removes bullets */
     padding: 0;
     background-color: #000; /* Adjust color to your preference */
-    text-align: center;
-    margin: 0;
+    display: flex;
+    flex-direction: column;
 }
 
 nav ul li {
-    display: inline; /* Inline list items for horizontal layout */
-    margin-right: 20px;
+    
+    margin-right: 0;
 }
 
 nav ul li a {
+    display: block;
+    padding: 10px;
     color: #fff;
     text-decoration: none;
     font-weight: 700;
@@ -111,4 +113,16 @@ footer p {
     text-align: center;
     padding: 1rem 0;
     margin: 0;
+}
+
+@media (min-width: 600px) {
+    nav ul {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .card {
+        width: calc(50% - 40px);
+        margin: 20px;
+    }
 }
