@@ -114,3 +114,27 @@ footer p {
     margin: 0;
 }
 
+@media (min-width: 600px) {
+    main {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    nav ul {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .card {
+        width: calc(50% - 40px);
+        margin: 20px;
+    }
+
+    .card.information {
+        flex: 1 1 60%;
+    }
+
+    .card.learning {
+        flex: 1 1 40%;
+    }
+}
