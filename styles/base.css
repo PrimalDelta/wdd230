@@ -129,12 +129,4 @@ footer p {
         width: calc(50% - 40px);
         margin: 20px;
     }
-
-    .card.information {
-        flex: 1 1 60%;
-    }
-
-    .card.learning {
-        flex: 1 1 40%;
-    }
 }
