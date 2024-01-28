@@ -18,7 +18,7 @@ body {
 
 /* Header styles */
 header {
-    background-color: #00457C; /* Adjust color to your preference */
+    background-color: #00457C;
     color: #fff;
     display: flex;
     align-items: center;
@@ -40,15 +40,15 @@ header h1 {
 
 /* Navigation styles */
 nav ul {
-    list-style-type: none; /* Removes bullets */
+    list-style-type: none;
     padding: 0;
-    background-color: #000; /* Adjust color to your preference */
+    background-color: #000;
     display: flex;
     flex-direction: column;
 }
 
 nav ul li {
-    
+    display: inline;
     margin-right: 0;
 }
 
@@ -62,53 +62,53 @@ nav ul li a {
 
 /* Main content styles */
 main {
-    max-width: 800px; /* Limited width */
-    margin: 20px auto; /* Centering */
+    max-width: 800px;
+    margin: 20px auto;
     padding: 20px;
-    background-color: #fff; /* Adjust color to your preference */
+    background-color: #fff;
 }
 
 /* Card styles for sections */
 .card {
-    background-color: #e6e6e6; /* Light grey background, adjust color as needed */
-    border: 1px solid #000; /* Black border */
-    border-radius: 10px; /* Rounded corners */
-    padding: 20px; /* Spacing inside the card */
-    max-width: 600px; /* Max width of the card, adjust as needed */
-    margin: 20px auto; /* Center the card */
+    background-color: #e6e6e6;
+    border: 1px solid #000;
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 600px;
+    margin: 20px auto;
 }
 
 .card h3 {
-    background-color: #0057b7; /* Blue background for the title, adjust color as needed */
-    color: #fff; /* White text color */
-    padding: 10px; /* Spacing inside the title area */
-    border-radius: 8px 8px 0 0; /* Rounded corners on the top */
-    margin: -20px -20px 20px -20px; /* Aligns the title background with the card edges */
+    background-color: #0057b7;
+    color: #fff;
+    padding: 10px;
+    border-radius: 8px 8px 0 0;
+    margin: -20px -20px 20px -20px;
 }
 
 .card ul {
-    list-style: none; /* Remove default list styling */
-    padding: 0; /* Remove default padding */
-    margin: 0; /* Remove default margin */
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
 .card li {
-    padding: 5px 0; /* Spacing between list items */
-    border-bottom: 1px solid #ccc; /* Light grey border between items */
+    padding: 5px 0;
+    border-bottom: 1px solid #ccc;
 }
 
 .card li:last-child {
-    border-bottom: none; /* Remove border from the last item */
+    border-bottom: none;
 }
 
 .card a {
-    text-decoration: none; /* Remove underline from links */
-    color: #000; /* Set link color, adjust as needed */
+    text-decoration: none;
+    color: #000;
 }
 
 /* Footer styles */
 footer p {
-    background-color: #333; /* Adjust color to your preference */
+    background-color: #333;
     color: #fff;
     text-align: center;
     padding: 1rem 0;
