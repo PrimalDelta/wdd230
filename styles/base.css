@@ -78,6 +78,8 @@ main {
 
 /* Card styles for sections */
 .card {
+    width:100%;
+    box-sizing: border-box;
     background-color: #e6e6e6;
     border: 1px solid #000;
     border-radius: 10px;
