@@ -1,4 +1,21 @@
 /* This CSS will apply to larger screens based on the breakpoint defined in your base.css file */
+/* Media query for larger screens */
+@media (min-width: 768px) {
+    nav ul {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    nav a {
+        margin: 0 5px; /* Horizontal spacing between links */
+    }
+
+    .main-section {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); /* Two columns for larger screens */
+        gap: 20px;
+    }
+}
 
     .container {
         display: flex;
