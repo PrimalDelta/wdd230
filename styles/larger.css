@@ -1,5 +1,31 @@
-@media only screen and (min-width: 768px) {
-    body {
-        font-size: 16px; /* Larger text for larger screens */
-      } 
-  }
+/* This CSS will apply to larger screens based on the breakpoint defined in your base.css file */
+
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start; /* Align to the top if the content heights are different */
+        height: 100vh; /* Use the full height of the viewport */
+    }
+
+    .main-section {
+        width: 80%; /* Adjust the width as needed */
+        max-width: 1200px; /* Set a max-width if you want to limit how wide the content can grow */
+        display: flex;
+        justify-content: space-around; /* This will space out the main sections */
+        align-items: flex-start; /* Align to the top */
+        padding-top: 50px; /* Add some space at the top */
+    }
+
+    /* You can target the specific sections if needed */
+    .section-left,
+    .section-right {
+        width: 48%; /* Set the width of the sections to split the space */
+        margin: 0; /* Remove any default margins */
+    }
+
+    /* If you have a footer that should stay at the bottom */
+    footer {
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+    }

@@ -1,3 +1,7 @@
+@import url(normalization.css);
+/* Importing Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
 /* Base CSS (applies to mobile and all sizes) */
 body {
     background-color: #ffffff; /* Bright background */
@@ -36,13 +40,6 @@ nav a {
         gap: 20px;
     }
 }
-
-@import url(normalization.css);
-
-/* Importing Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
-
-
 
 /* Base styles */
 body {
