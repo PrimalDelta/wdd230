@@ -1,0 +1,32 @@
+@media (min-width: 600px) {
+    .main-section {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .card-container {
+        flex-direction: row;
+        width: 100;
+    }
+
+
+
+    nav ul {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .card1,
+    .card2 {
+        width: 100%;
+        margin: 10px;
+        flex: 1;
+    }
+
+    footer {
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+    }
+}
