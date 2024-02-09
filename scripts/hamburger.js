@@ -1,19 +1,12 @@
 document.addEventListener('DOMContentLoaded', (event) => {
-    // Get the hamburger icon and the menu list
-    const hamburgerIcon = document.querySelector('.hamburger');
-    const menuList = document.querySelector('nav ul');
-    
-    // Function to toggle the menu open/close
+    const hamburger = document.querySelector('.hamburger');
+    const nav = document.querySelector('nav');
+
     function toggleMenu() {
-        menuList.classList.toggle('open');
-        // Toggle the icon between hamburger and 'X'
-        if (menuList.classList.contains('open')) {
-            hamburgerIcon.textContent = '✕'; // 'X' symbol
-        } else {
-            hamburgerIcon.textContent = '☰'; // Hamburger symbol
-        }
+        nav.classList.toggle('open');
+        let icon = hamburger.textContent === '☰' ? '✖' : '☰';
+        hamburger.textContent = icon;
     }
-    
-    // Add click event to the hamburger icon
-    hamburgerIcon.addEventListener('click', toggleMenu);
+
+    hamburger.addEventListener('click', toggleMenu);
 });

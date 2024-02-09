@@ -147,16 +147,27 @@ footer {
 }
 
 @media screen and (max-width: 600px) {
-    nav ul {
+    .hamburger {
+        display: block;
+        cursor: pointer;
+        font-size: 2em;
+    }
+
+    nav {
+        display: none;
+    }
+
+    nav.open {
         display: block;
     }
-    
+
+    nav ul {
+        display: flex;
+        flex-direction: column;
+    }
+
     nav ul li {
         text-align: center;
-        padding: 10px 0;
-    }
-    
-    .hamburger {
-        display: inline-block;
+        padding: 10px;
     }
 }
