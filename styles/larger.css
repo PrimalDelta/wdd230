@@ -10,7 +10,9 @@
         width: 100;
     }
 
-
+    .hamburger {
+        display: none;
+    }
 
     nav ul {
         flex-direction: row;
