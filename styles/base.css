@@ -158,7 +158,7 @@ footer {
     }
 
     nav.open {
-        display: block;
+        display: contents;
     }
 
     nav ul {
