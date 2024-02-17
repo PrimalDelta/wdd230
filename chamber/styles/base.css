@@ -1,0 +1,102 @@
+/* base.css */
+
+/* Reset or Normalize CSS */
+/* Add your preferred reset or normalize styles here */
+
+/* Base Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif; /* Choose your preferred font */
+    background-color: #ffffff; /* Choose a background color */
+    color: #333333; /* Choose a text color */
+    line-height: 1.6;
+}
+
+/* Typography */
+h1, h2, h3, h4, h5, h6 {
+    margin-top: 0;
+    margin-bottom: 0.5em;
+    color: #444444; /* Choose a color for headings */
+}
+
+p {
+    margin-bottom: 1em;
+}
+
+a {
+    color: #0066cc; /* Choose a color for links */
+    text-decoration: none; /* Adjust if you want underlines for links */
+}
+
+a:hover,
+a:focus {
+    text-decoration: underline; /* Adjust as preferred for hover/focus states */
+}
+
+/* Containers */
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+/* Header */
+header {
+    background-color: #333333; /* Choose a color for the header */
+    color: #ffffff;
+    padding-top: 20px;
+    min-height: 70px;
+    border-bottom: #0066cc 3px solid; /* Choose a color for the header border */
+}
+
+/* Navigation */
+nav {
+    background-color: #333333; /* Choose a color for the nav */
+    color: #ffffff;
+    padding: 0.5em;
+}
+
+nav ul {
+    padding: 0;
+    list-style: none;
+    display: flex; /* This will be adjusted for responsive styles */
+    justify-content: space-between;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: #ffffff;
+    padding: 0.5em;
+}
+
+/* Main */
+main {
+    padding: 20px;
+}
+
+/* Footer */
+footer {
+    background-color: #333333; /* Choose a color for the footer */
+    color: #ffffff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+/* Add your media queries for responsiveness */
+@media (max-width: 768px) {
+    /* Adjust styles for mobile view */
+    nav ul {
+        flex-direction: column;
+        display: none; /* Hidden by default, shown by JavaScript toggle */
+    }
+    
+    .nav-toggle {
+        display: initial;
+    }
+}
+
+/* Add any additional styles specific to your design */
