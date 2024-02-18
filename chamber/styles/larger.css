@@ -57,6 +57,12 @@
     }
 
 
-
-
+    /* Desktop-specific adjustments for other sections */
+    .call-to-action,
+    .events,
+    .weather,
+    .spotlights {
+        /* Adjust margins, display properties, or grid layouts for desktop */
+    }
+    
 }

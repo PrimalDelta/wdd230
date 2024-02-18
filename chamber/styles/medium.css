@@ -46,5 +46,11 @@
 
 
 
-
+    /* Adjustments for other sections as necessary */
+    .call-to-action,
+    .events,
+    .weather,
+    .spotlights {
+        /* Adjust padding or layout for medium screens */
+    }
 }

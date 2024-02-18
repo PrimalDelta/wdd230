@@ -1,0 +1,165 @@
+/* Importing Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+/* Base styles */
+body {
+    font-family: 'Open Sans', sans-serif;
+    color: #333;
+    background-color: #f4f4f4;
+    margin: 0;
+}
+
+/* Header styles */
+header {
+    background-color: #00457C;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+/* Profile Picture styles */
+header img {
+    border-radius: 30%;
+    margin-right: 20px;
+    width: 100px;
+    height: 100px;
+}
+
+header h1 {
+    font-size: 2em;
+    margin: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: calc(100% - 120px);
+}
+
+/* Navigation styles */
+nav {
+    display: none;
+}
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    background-color: #000;
+    display: flex;
+    flex-direction: column;
+}
+
+nav li {
+    padding: 10px 0;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+/* Main content styles */
+main {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap; 
+    justify-content: center; 
+    align-items: flex-start; 
+    box-sizing: border-box;
+    padding: 10px;
+    background-color: #fff;
+    width: 100%; 
+    overflow-x: auto;
+}
+
+
+main h2 {
+    text-align: center;
+    width: 100%;
+}
+
+/* Allows cards to be set as a row */
+.card-container {
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    width: 100%;
+}
+
+/* Card styles for sections */
+.card1,
+.card2{
+    flex: 1;
+    flex-direction: column;
+    width: auto;
+    background-color: #e6e6e6;
+    border: 1px solid #000;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px;
+    box-sizing: border-box;
+}
+
+.card1 h3,
+.card2 h3 {
+    background-color: #0057b7;
+    color: #fff;
+    padding: 10px;
+    border-radius: 8px 8px 0 0;
+    margin: -20px -20px 20px -20px;
+}
+
+.card1 ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.card1 li {
+    padding: 5px 0;
+    border-bottom: 1px solid #ccc;
+}
+
+.card1 li:last-child {
+    border-bottom: none;
+}
+
+.card1 a {
+    text-decoration: none;
+    color: #000;
+}
+
+
+
+/* Footer styles */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+/* Add a CSS pseudo-element for the current menu item */
+nav ul li.current::after {
+    content: '→';
+    color: #00457C;
+    font-size: 1.2em;
+    padding-left: 5px;
+}
+
+.menu-toggle {
+    display: none;
+}
+
+.hamburger {
+    display: block;
+    cursor: pointer;
+    background-color: red; /* Make it visually obvious */
+    width: 50px; /* Ensure it has size */
+    height: 50px; /* Ensure it has size */
+}
+
+.menu-toggle:checked + .hamburger + nav {
+    display: block; /* Show the menu when the checkbox is checked */
+}
