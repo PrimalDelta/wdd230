@@ -46,12 +46,16 @@
         color: #ffffff;
     }
 
-
+    .hero img {
+        width: 30%;
+        max-width: 300px;
+    }
 
     /* Desktop-specific adjustments for the hero image */
     .hero {
         padding: 40px;
     }
+
 
     /* Desktop-specific adjustments for other sections */
     .call-to-action,
@@ -61,10 +65,4 @@
         /* Adjust margins, display properties, or grid layouts for desktop */
     }
     
-    /* Footer adjustments if needed */
-    footer {
-        /* Adjust layout or padding for larger screens */
-    }
-
-    /* Any additional larger-screen-specific styles */
 }

@@ -8,10 +8,13 @@ body {
     line-height: 1.6;
 }
 
+/* base.css */
 .hero img {
-    max-width: 100%;
+    width: 50%;
+    max-width: 200px;
     height: auto;
     display: block;
+    margin: 0 auto;
 }
 
 

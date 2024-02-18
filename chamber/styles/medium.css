@@ -34,10 +34,17 @@
     }
 
 
+    .hero img {
+        width: 40%;
+        max-width: 250px;
+    }
+
     /* Adjustments for hero image */
     .hero {
         padding: 40px;
     }
+
+
 
     /* Adjustments for other sections as necessary */
     .call-to-action,
