@@ -1,8 +1,9 @@
 /* medium.css - for medium-sized screens, e.g., tablets */
 @media screen and (min-width: 600px) {
+    
     /* Increase base font size for readability on tablets */
     body {
-        font-size: 1rem; /* Example size; adjust as needed */
+        font-size: 1rem;
     }
 
     /* Adjust layout for medium screens */
@@ -10,13 +11,32 @@
         width: 90%;
     }
 
+/* Adjusts navigation menu for medium screens (e.g., tablets) */
     nav ul {
-        /* Adjust navigation layout for medium screens if necessary */
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        display: flex;
+        justify-content: center;
     }
+
+    nav ul li {
+        padding: 10px 20px;
+    }
+
+    nav ul li a {
+        display: block;
+        transition: color 0.3s ease-in-out;
+    }
+
+    nav ul li a:hover {
+        color: #ffd700;
+    }
+
 
     /* Adjustments for hero image */
     .hero {
-        /* Adjust size or padding for medium screens */
+        padding: 40px;
     }
 
     /* Adjustments for other sections as necessary */

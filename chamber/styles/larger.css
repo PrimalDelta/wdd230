@@ -11,15 +11,46 @@
         max-width: 1200px;
     }
 
+
     nav ul {
-        /* Ensure navigation is always visible on larger screens */
-        display: flex;
-        justify-content: space-between;
+        justify-content: flex-end;
     }
+
+    nav ul li {
+        padding: 15px 30px;
+    }
+
+    
+    nav ul li a.active,
+    nav ul li a:hover {
+        color: #ffd700;
+        border-bottom: 2px solid #ffd700;
+    }
+
+    nav ul li ul {
+        display: none;
+        position: absolute;
+        background-color: #333333;
+    }
+
+    nav ul li:hover ul {
+        display: block;
+    }
+
+    nav ul li ul li {
+        padding: 10px;
+    }
+
+    nav ul li ul li a {
+        padding: 5px 10px;
+        color: #ffffff;
+    }
+
+
 
     /* Desktop-specific adjustments for the hero image */
     .hero {
-        /* Example: increase size, add background properties, etc. */
+        padding: 40px;
     }
 
     /* Desktop-specific adjustments for other sections */
