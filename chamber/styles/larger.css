@@ -1,0 +1,39 @@
+/* larger.css - for larger-sized screens, e.g., desktops */
+@media screen and (min-width: 960px) {
+    /* Increase base font size for readability on desktops */
+    body {
+        font-size: 1.1rem; /* Example size; adjust as needed */
+    }
+
+    /* Adjust layout for larger screens */
+    .container {
+        width: 80%; /* Maximum width or fixed width as preferred */
+        max-width: 1200px; /* Example max-width; adjust as needed */
+    }
+
+    nav ul {
+        /* Ensure navigation is always visible on larger screens */
+        display: flex;
+        justify-content: space-between;
+    }
+
+    /* Desktop-specific adjustments for the hero image */
+    .hero {
+        /* Example: increase size, add background properties, etc. */
+    }
+
+    /* Desktop-specific adjustments for other sections */
+    .call-to-action,
+    .events,
+    .weather,
+    .spotlights {
+        /* Adjust margins, display properties, or grid layouts for desktop */
+    }
+    
+    /* Footer adjustments if needed */
+    footer {
+        /* Adjust layout or padding for larger screens */
+    }
+
+    /* Any additional larger-screen-specific styles */
+}
