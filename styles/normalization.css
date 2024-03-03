@@ -14,7 +14,9 @@ body {
   margin: 0;
 }
 
-
+/* Add the correct box sizing in Firefox.
+ * 1. Add the correct box sizing in IE 10-.
+ */
 article,
 aside,
 details,
@@ -73,7 +75,3 @@ textarea {
   line-height: 1.15; /* 1 */
   margin: 0; /* 2 */
 }
-
-
-
-
