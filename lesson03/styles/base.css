@@ -30,7 +30,7 @@ section h2 {
 .container {
   width: 80%;
   margin: 0 auto;
-  padding-left: 50px; /* For main content padding */
+  padding-left: 50px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -92,7 +92,7 @@ footer nav li {
       width: 90%;
       flex-direction: column;
       text-align: center;
-      padding-left: 20px; /* Smaller padding for mobile view */
+      padding-left: 20px;
   }
 
   nav ul {
