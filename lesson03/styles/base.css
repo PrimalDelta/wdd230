@@ -1,34 +1,109 @@
-body {
-    font-family: 'Arial', sans-serif;
-    color: #333;
-    background-color: #f8f8f8;
-    margin: 0;
-    padding: 0;
+:root {
+  --primary-color: #005792;
+  --secondary-color: #e7e7de;
+  --text-color: #333;
+  --header-background: #f8f8f8;
+}
+
+body, footer {
+  margin: 0;
+  padding: 20px 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: var(--header-background);
+  color: var(--text-color);
+  font-size: 0.9em;
+}
+
+h1, section h2 {
+  color: var(--primary-color);
+  margin: 0 0 10px 0;
+}
+
+h1 {
+  font-size: 2em;
+}
+
+section h2 {
+  font-size: 1.5em;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+  padding-left: 50px; /* For main content padding */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+}
+
+nav li, footer nav li {
+  padding: 0 15px;
+}
+
+nav a, footer nav a {
+  text-decoration: none;
+  color: var(--text-color);
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+nav a:hover, footer nav a:hover {
+  color: var(--primary-color);
+}
+
+section {
+  margin-bottom: 40px;
+  padding: 20px;
+  border-bottom: 1px solid #ddd;
+}
+
+section:last-of-type {
+  border-bottom: none;
+}
+
+section p, footer p {
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.footer-content, footer nav ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  list-style-type: none;
+}
+
+footer nav li {
+  display: inline;
+  margin: 0 10px;
+}
+
+/* Responsive design adjustments */
+@media (max-width: 768px) {
+  .container {
+      width: 90%;
+      flex-direction: column;
+      text-align: center;
+      padding-left: 20px; /* Smaller padding for mobile view */
   }
-  header {
-    background-color: #004a99;
-    color: white;
-    padding: 10px 0;
-    text-align: center;
+
+  nav ul {
+      flex-direction: column;
   }
-  nav {
-    background-color: #eaeaea;
-    padding: 10px 0;
-    text-align: center;
+
+  nav li {
+      padding: 5px 0;
   }
-  nav a {
-    color: #004a99;
-    text-decoration: none;
-    margin: 0 15px;
+
+  section {
+      padding: 15px 0;
   }
-  .content {
-    padding: 20px;
-  }
-  footer {
-    background-color: #004a99;
-    color: white;
-    text-align: center;
-    padding: 10px 0;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
+}

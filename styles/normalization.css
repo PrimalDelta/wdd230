@@ -2,79 +2,77 @@
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
  html {
-    line-height: 1.15; /* 1 */
-    -webkit-text-size-adjust: 100%; /* 2 */
-  }
-  
-  
-  /**
-   * Remove the margin in all browsers.
-   */
-  body {
-    margin: 0;
-  }
-  
-  /* Add the correct box sizing in Firefox.
-   * 1. Add the correct box sizing in IE 10-.
-   */
-  article,
-  aside,
-  details,
-  figcaption,
-  figure,
-  footer,
-  header,
-  main,
-  menu,
-  nav,
-  section,
-  summary {
-    box-sizing: border-box; /* 1 */
-  }
-  
-  /* 1. Correct the inheritance and scaling of font size in all browsers.
-   * 2. Correct the odd 'em' font sizing in all browsers.
-   */
-  h1 {
-    font-size: 2em; /* 1 */
-    margin: 0.67em 0; /* 2 */
-  }
-  
-  /* Remove the gray background on active links in IE 10. */
-  a {
-    background-color: transparent;
-  }
-  
-  /**
-   * 1. Remove the bottom border in Chrome 57- and Firefox 39-.
-   * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
-   */
-  a:active,
-  a:hover {
-    outline-width: 0; /* 1 */
-    text-decoration: none; /* 2 */
-  }
-  
+  line-height: 1.15; /* 1 */
+  -webkit-text-size-adjust: 100%; /* 2 */
+}
 
-  img {
-    border-style: none;
-  }
-  
 
-  /* 1. Change the font styles in all browsers.
-   * 2. Remove the margin in Firefox and Safari.
-   */
+/**
+ * Remove the margin in all browsers.
+ */
+body {
+  margin: 0;
+}
 
-  button,
-  input,
-  optgroup,
-  select,
-  textarea {
-    font-family: inherit; /* 1 */
-    font-size: 100%; /* 1 */
-    line-height: 1.15; /* 1 */
-    margin: 0; /* 2 */
-  }
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+main,
+menu,
+nav,
+section,
+summary {
+  box-sizing: border-box; /* 1 */
+}
+
+/* 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd 'em' font sizing in all browsers.
+ */
+h1 {
+  font-size: 2em; /* 1 */
+  margin: 0.67em 0; /* 2 */
+}
+
+/* Remove the gray background on active links in IE 10. */
+a {
+  background-color: transparent;
+}
+
+/**
+ * 1. Remove the bottom border in Chrome 57- and Firefox 39-.
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+a:active,
+a:hover {
+  outline-width: 0; /* 1 */
+  text-decoration: none; /* 2 */
+}
+
+
+img {
+  border-style: none;
+}
+
+
+/* 1. Change the font styles in all browsers.
+ * 2. Remove the margin in Firefox and Safari.
+ */
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit; /* 1 */
+  font-size: 100%; /* 1 */
+  line-height: 1.15; /* 1 */
+  margin: 0; /* 2 */
+}
 
 
 
