@@ -1,56 +1,43 @@
-/* medium.css - for medium-sized screens, e.g., tablets */
-@media screen and (min-width: 600px) {
-    
-    /* Increase base font size for readability on tablets */
-    body {
-        font-size: 1rem;
+@media screen and (min-width: 481px) and (max-width: 1024px) {
+
+        /* Larger navigation menu styles */
+    .hamburger {
+        display: none;
     }
 
-    /* Adjust layout for medium screens */
-    .container {
-        width: 90%;
-    }
-
-/* Adjusts navigation menu for medium screens (e.g., tablets) */
     nav ul {
-        padding: 0;
-        margin: 0;
-        list-style: none;
         display: flex;
         justify-content: center;
-    }
+        padding: 0;
+      }
 
     nav ul li {
-        padding: 10px 20px;
+        padding: 0;
+        margin: 0 10px; /* Spacing between menu items */
     }
 
     nav ul li a {
-        display: block;
-        transition: color 0.3s ease-in-out;
+      padding: 10px 20px;
     }
-
-    nav ul li a:hover {
-        color: #ffd700;
+  
+    /* Other medium screen adjustments */
+    header {
+      padding: 15px 0;
     }
-
-
-    .hero img {
-        width: 40%;
-        max-width: 250px;
+  
+    /* Adjust font sizes for readability on medium screens */
+    body {
+      font-size: 1rem;
     }
-
-    /* Adjustments for hero image */
-    .hero {
-        padding: 40px;
+  
+    h1 {
+      font-size: 2.5rem;
     }
-
-
-
-    /* Adjustments for other sections as necessary */
-    .call-to-action,
-    .events,
-    .weather,
-    .spotlights {
-        /* Adjust padding or layout for medium screens */
+  
+    h2 {
+      font-size: 2rem;
     }
-}
+  
+    /* ... additional styles for medium-sized screens ... */
+  }
+  

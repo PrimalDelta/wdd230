@@ -1,109 +1,101 @@
-/* Base Styles */
+/* Color Scheme Variables */
+:root {
+    --primary-color: #4a90e2;
+    --secondary-color: #e94a7a;
+    --accent-color: #f5a623;
+    --light-bg-color: #ecf0f1;
+    --text-color: #333; 
+    --text-light-color: #777; 
+}
+
+/* Base element styles */
 body {
-    margin: 0;
-    padding: 0;
-    font-family: 'Arial', sans-serif;
-    background-color: #ffffff;
-    color: #333333;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: var(--text-color);
+    background-color: var(--light-bg-color);
     line-height: 1.6;
-}
-
-/* base.css */
-.hero img {
-    width: 50%;
-    max-width: 200px;
-    height: auto;
-    display: block;
-    margin: 0 auto;
-}
-
-
-.hero {
     padding: 20px;
-    text-align: center; 
 }
 
-/* Typography */
+
+/* Headings */
 h1, h2, h3, h4, h5, h6 {
-    margin-top: 0;
-    margin-bottom: 0.5em;
-    color: #444444;
-}
-
-p {
-    margin-bottom: 1em;
-}
-
-a {
-    color: #0066cc;
-    text-decoration: none;
-}
-
-a:hover,
-a:focus {
-    text-decoration: underline;
-}
-
-/* Containers */
-.container {
-    width: 80%;
-    margin: auto;
-    overflow: hidden;
+    color: var(--secondary-color);
+    margin-bottom: 1rem;
 }
 
 /* Header */
 header {
-    background-color: #333333;
-    color: #ffffff;
-    padding-top: 20px;
-    min-height: 70px;
-    border-bottom: #0066cc 3px solid;
+    background: var(--primary-color);
+    color: white;
+    padding: 10px 0;
+    text-align: center;
 }
 
-/* Navigation */
+/* Navigation menu */
 nav {
-    background-color: #333333;
-    color: #ffffff;
-    padding: 0.5em;
+    background: var(--secondary-color);
 }
 
 nav ul {
-    padding: 0;
+    display: none;
+    width: 100%;
+    background: var(--secondary-color);
+    transition: max-height 0.3s ease-out;
+
     list-style: none;
-    display: flex;
-    justify-content: space-between;
+}
+
+nav ul.active {
+    display: block; /* Show the menu when active */
+    width: 100%;
+    top: 60px;
+    right: 0;
+    max-height: 500px;
 }
 
 nav ul li {
-    display: inline;
+    padding: 10px;
 }
 
-nav ul li a {
-    color: #ffffff;
-    padding: 0.5em;
+nav a {
+    padding: 10px;
+    display: block;
+    color: var(--primary-color);
+    text-decoration: none;
 }
 
-/* Main */
-main {
-    padding: 20px;
+nav a:hover {
+    background-color: var(--accent-color);
 }
 
 /* Footer */
 footer {
-    background-color: #333333;
-    color: #ffffff;
+    background: var(--text-color);
+    color: white;
     text-align: center;
-    padding: 10px 0;
+    padding: 20px 0;
 }
 
-/* Add your media queries for responsiveness */
-@media (max-width: 768px) {
-    nav ul {
-        flex-direction: column;
-        display: none;
-    }
-    
-    .nav-toggle {
-        display: initial;
-    }
+footer p {
+    color: var(--text-light-color);
+    margin: 0;
 }
+
+/* Hamburger menu icon */
+.hamburger {
+    display: block;
+    cursor: pointer;
+    
+  }
+
+/* Styles for the hamburger icon bars */
+.hamburger div {
+  width: 30px;
+  height: 3px;
+  background-color: black;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+/* Add other styles for buttons, forms, typography, etc., as needed */

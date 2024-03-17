@@ -1,69 +1,84 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Your local Chamber of Commerce, fostering business growth and community development.">
-    <meta name="author" content="Your Name">
-    <!-- Social Media Meta Tags -->
-    <meta property="og:title" content="Chamber of Commerce">
-    <meta property="og:description" content="Join our vibrant business community!">
-    <meta property="og:image" content="image-link.jpg">
-    <meta property="og:url" content="website-link.com">
-    <title>Chamber of Commerce</title>
-    <!-- Favicon -->
-    <link rel="icon" type="image/x-icon" href="https://primaldelta.github.io/wdd230/images/favicon.ico">
-    <!-- Stylesheets -->
-    <link rel="stylesheet" href="https://primaldelta.github.io/wdd230/chamber/styles/base.css">
-    <link rel="stylesheet" href="https://primaldelta.github.io/wdd230/chamber/styles/medium.css">
-    <link rel="stylesheet" href="https://primaldelta.github.io/wdd230/chamber/styles/larger.css">
+    <meta name="description" content="Description for the Chamber of Commerce.">
+    <meta name="author" content="Jared Browner-Botson">
+    <meta property="og:title" content="Delta's Town Chamber of Commerce">
+    <meta property="og:description" content="Join Delta's Town Chamber of Commerce to connect with local businesses and grow your network.">
+    <meta property="og:image" content="images/social-preview.png">
+    <meta property="og:url" content="http://www.deltachamber.com">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Delta's Town Chamber of Commerce">
+    <meta name="twitter:description" content="Join Delta's Town Chamber of Commerce to connect with local businesses and grow your network.">
+    <meta name="twitter:image" content="/chamber/images/heroimage.jpeg">
+    <title>Detla Chamber of Commerce</title>
+    <link rel="stylesheet" href="/chamber/styles/normalization.css">
+    <link rel="stylesheet" href="/chamber/styles/base.css">
+    <link rel="stylesheet" href="/chamber/styles/medium.css" media="screen and (min-width: 600px)">
+    <link rel="stylesheet" href="/chamber/styles/larger.css" media="screen and (min-width: 960px)">
+    <link rel="icon" type="image/x-icon" href="/chamber/images/favicon.ico">
 </head>
 <body>
     <header>
-        <h1>Chamber of Commerce</h1>
+        <h1>Delta's Town Chamber of Commerce</h1>
+        <div class="hamburger">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <nav>
+            <ul class="containter">
+                <li><a href="/chamber/index.html">Home</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="join.html">Join Us</a></li>
+            </ul>
+        </nav>
     </header>
-    <nav>
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="lesson03/chamber-site-plan.pdf">Site Plan</a></li>
-            <li><a href="https://primaldelta.github.io/wdd230/chamber/index.html" target="_blank">Chamber</a></li>
-            <li><a href="https://www.byui.edu" target="_blank">BYU-Idaho</a></li>
-            <li><a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/3-ne/11?lang=eng" target="_blank">Scripture</a></li>
-        </ul>
-    </nav>
+
+
+    
     <main>
-        <!-- Hero Image Section -->
-        <section class="hero">
-            <img src="https://primaldelta.github.io/wdd230/chamber/images/chamber.jpg" alt="Main image">
+        <section class="heroimage">
+            <img src="chamber/images/heroimage.jpeg" alt="heroimage">
         </section>
-        <!-- Call to Action Section -->
-        <section class="call-to-action">
-            <h2>Join the Chamber of Commerce</h2>
-            <p>Discover the benefits of being a member of our business community.</p>
-            <button>Join Now</button>
-        </section>
-        <!-- Current Events Section -->
+        
         <section class="events">
             <h2>Upcoming Events</h2>
-            <!-- Event details go here -->
+            <p>Don't miss our next networking event this Friday!</p>
+            <!-- Additional events will be listed here -->
         </section>
-        <!-- Weather Card Section -->
+
         <section class="weather">
             <h2>Local Weather</h2>
-            <!-- Weather details will be added via JavaScript -->
+            <p>Placeholder for weather card.</p>
         </section>
-        <!-- Company Spotlights Section -->
+
         <section class="spotlights">
             <h2>Business Spotlights</h2>
-            <!-- Spotlight content goes here -->
+            <article>
+                <h3>Company One</h3>
+                <p>Leading the industry in innovation!</p>
+            </article>
+            <article>
+                <h3>Company Two</h3>
+                <p>Committed to community service!</p>
+            </article>
+            <article>
+                <h3>Company Three</h3>
+                <p>Award-winning designs and customer service!</p>
+            </article>
         </section>
     </main>
     <footer>
-        <p>Contact us at email@example.com</p>
-        <p>Project for WDD 230 by Your Name</p>
-        <p>Last Updated: <span id="lastModified"></span></p>
+        <p>&copy; 2024 Delta's Town Chamber of Commerce. All Rights Reserved.</p>
+        <p>Contact us at <a href="mailto:contact@chamberofcommerce.com">contact@chamberofcommerce.com</a></p>
+        <p>Project for WDD 230 by Jared Browner-Botson</p>
+        <p>Last Modified: <span id="last-modified-date">[Date will be loaded]</span></p>
     </footer>
-    <!-- Scripts -->
-    <script src="scripts/main.js"></script>
+    <script src="/chamber/scripts/getdates.js"></script>
+    <script src="/chamber/scripts/hamburger.js"></script>
 </body>
 </html>
