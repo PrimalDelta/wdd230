@@ -99,6 +99,10 @@ footer {
     background-color: #0056b3;
     color: white;
     padding: 1rem;
-    height: 50px;
     display: flex;
+    font-size: small;
+}
+
+footer p {
+    margin-right: 10px;
 }
