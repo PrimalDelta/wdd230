@@ -1,0 +1,51 @@
+@media (min-width: 1024px) {
+
+    body {
+        background-color: #e0e0e0;
+        font-size: 18px;
+    }
+
+    .container {
+        width: 90%;
+        max-width: 1400px;
+        margin: 0 auto;
+        padding: 40px;
+    }
+
+    h1, h2, h3 {
+        font-size: 2.5rem;
+        color: #003366;
+        text-align: left;
+    }
+
+    .section {
+        margin-bottom: 60px;
+        padding: 40px;
+        background-color: white;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+    }
+
+    .main-content, .sidebar {
+        display: inline-block;
+        vertical-align: top;
+    }
+
+    .main-content {
+        width: 70%;
+    }
+
+    .sidebar {
+        width: 28%;
+        margin-left: 2%;
+    }
+
+    nav ul li {
+        margin: 0 15px;
+    }
+
+    nav ul li a {
+        font-size: 1.2rem;
+    }
+    
+}
