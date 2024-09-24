@@ -1,7 +1,7 @@
 @media (min-width: 1024px) {
-
+    
+    /* Existing styles */
     body {
-        background-color: #e0e0e0;
         font-size: 18px;
     }
 
@@ -14,14 +14,12 @@
 
     h1, h2, h3 {
         font-size: 2.5rem;
-        color: #003366;
         text-align: left;
     }
 
     .section {
         margin-bottom: 60px;
         padding: 40px;
-        background-color: white;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         border-radius: 10px;
     }
@@ -40,12 +38,40 @@
         margin-left: 2%;
     }
 
-    nav ul li {
-        margin: 0 15px;
+    /* Make sure the nav stretches full width */
+    nav {
+        width: 100%;
+        padding: 10px 0;
+        margin: 0;
     }
 
-    nav ul li a {
-        font-size: 1.2rem;
+    /* Stretch the navigation list across the full width */
+    nav ul {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        list-style: none;
+        margin: 0;
+        padding: 0;
     }
-    
+
+    /* Ensure list items have no extra margin */
+    nav ul li {
+        margin: 0;
+    }
+
+    /* Style the links */
+    nav ul li a {
+        display: block;
+        padding: 10px 40px;
+        font-size: 1.2rem;
+        color: white;
+        text-decoration: none;
+        text-align: center;
+    }
+
+    /* Hover effect for the links */
+    nav ul li a:hover {
+        background-color: #004080;
+    }
 }

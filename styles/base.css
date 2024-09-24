@@ -1,8 +1,8 @@
 /* Basic styling for the body */
 body {
     font-family: 'Roboto', sans-serif;
-    background-color: #f0f0f0; /* light gray */
-    color: #333; /* dark text for readability */
+    background-color: #f0f0f0; 
+    color: #333; 
     margin: 0;
     padding: 0;
 }
@@ -11,25 +11,38 @@ body {
 h1, h2, h3 {
     font-family: 'Lora', serif;
     text-align: center;
-    color: #0056b3; /* strong blue */
+    color: #0056b3;
     margin: 20px 0;
 }
 
 /* Paragraph and text styles */
 p {
     line-height: 1.6;
-    color: #555; /* medium gray for contrast */
+    color: #555;
     padding: 10px;
 }
 
 /* Link styles */
-a {
-    color: #ff6347; /* tomato color for links */
+nav {
+    background-color: #0056b3;
+    margin: 0; /* Removed auto margins */
+    width: 100%; /* Ensure it takes full width */
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav a {
+    color: white;
+    display: block;
+    text-align: center;
+    padding: 1rem;
     text-decoration: none;
 }
 
-a:hover {
-    text-decoration: underline;
+nav a:hover {
+    border: 1px solid white;
 }
 
 /* General layout spacing */
@@ -45,6 +58,6 @@ a:hover {
     margin-bottom: 40px;
     padding: 20px;
     border-radius: 8px;
-    background-color: #fff; /* white background for sections */
+    background-color: #fff;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
