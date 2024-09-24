@@ -1,7 +1,10 @@
 /* Basic styling for the body */
 body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
     font-family: 'Roboto', sans-serif;
-    background-color: #f0f0f0; 
+    background-color: #e6e6fa;
     color: #333; 
     margin: 0;
     padding: 0;
@@ -10,27 +13,19 @@ body {
 /* Heading styles */
 h1, h2, h3 {
     font-family: 'Lora', serif;
-    text-align: center;
-    color: #0056b3;
-    margin: 20px 0;
-}
-
-/* Paragraph and text styles */
-p {
-    line-height: 1.6;
-    color: #555;
-    padding: 10px;
 }
 
 /* Link styles */
 nav {
     background-color: #0056b3;
-    margin: 0; /* Removed auto margins */
-    width: 100%; /* Ensure it takes full width */
+    margin: 0;
+    width: 100%;
 }
 
 nav ul {
     list-style-type: none;
+    padding: 0;
+    margin: 0;
 }
 
 nav a {
@@ -43,21 +38,67 @@ nav a {
 
 nav a:hover {
     border: 1px solid white;
+    background-color: #004080;
 }
 
-/* General layout spacing */
-.container {
-    margin: 0 auto;
-    width: 80%;
-    padding: 20px;
-    max-width: 1200px;
+/* Main styles */
+main {
+    flex: 1;                     /* Allow main to grow and fill available space */
+    max-width: 800px;
+    text-align: center;
+    margin: auto;
+    width: 100%;
 }
 
-/* Consistent spacing */
-.section {
-    margin-bottom: 40px;
+main h1 {
+    color: #0056b3;
+    margin: auto;
+    text-align: center;
+}
+
+main h2 {
+    color: white;
+    font-size: larger;
+    text-align: center;
+}
+
+.card-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 16px;
+}
+
+.card {
     padding: 20px;
+    background-color: #0056b3;
+    border: 1px solid black;
     border-radius: 8px;
-    background-color: #fff;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.card ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.card a {
+    color: white;
+    display: block;
+    text-align: center;
+    padding: 1rem;
+    text-decoration: none;
+}
+
+.card a:hover {
+    border: 1px solid white;
+    background-color: #004080;
+}
+
+/* Footer styles */
+footer {
+    background-color: #0056b3;
+    color: white;
+    padding: 1rem;
+    height: 50px;
+    display: flex;
 }
