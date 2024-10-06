@@ -5,8 +5,8 @@ header {
 
 
 body {
-    background-color: white;
-    color: darkgray;
+    background: linear-gradient(to right, white, darkgray);
+    color: black;
     font-family: 'Roboto', sans-serif;
 }
 
@@ -15,9 +15,6 @@ p {
     color: #ffd700;
 }
 
-button {
-    color: linear-gradient(#ffd700, #ffb400);
-}
 
 footer {
     background-color: black;
