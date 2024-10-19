@@ -1,0 +1,93 @@
+@media screen and (min-width: 1200px) {
+
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 20px;
+    }
+
+    header h1 {
+        margin: 0; /* Adjust as needed */
+    }
+
+    #menuItems {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        width: auto;
+        right: auto;
+        top: auto;
+        height: auto;
+        transition: none;
+        overflow-y: visible;
+        background-color: transparent;
+    }
+
+    .hamburger {
+        display: none;
+    }
+    
+    .close {
+        display: block;
+    }
+
+    body.dark-mode #menuItems {
+        background: transparent;
+    }
+
+    nav ul {
+        display: flex;
+        margin: 0;
+        padding: 0;
+    }
+
+    nav ul li {
+        list-style: none;
+        margin-left: 20px;
+    }
+
+    nav ul li a {
+        text-decoration: none;
+        padding: 10px 15px;
+    }
+
+    .slider {
+        position: fixed;
+        top: 15px;
+        right: 100px;
+        display: inline-block;
+    }
+  
+    /* Font sizes and other element styles for larger screens */
+    body {
+      font-size: 1.2rem;
+    }
+  
+    h2 {
+      font-size: 2.5rem;
+    }
+  
+
+    /* Discover page CSS */
+    .discover main {
+        display: grid;
+        grid-template-columns: 1fr 300px;
+        gap: 20px;
+    }
+
+    .discover main {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 30px;
+    }
+
+    .sidebar {
+        grid-column: 1 / 4;
+        grid-row: 1;
+        order: -1;
+    }
+
+  }
+  

@@ -1,0 +1,384 @@
+/* base.css */
+:root {
+  /* Light Mode Colors */
+  --primary-color: #000000;
+  --secondary-color: #FFD700;
+  --accent-color: #FFD700;
+  --font-family: 'Open Sans', sans-serif;
+  --header-height: 65px;
+
+  /* Dark Theme Colors */
+  --dark-background-color: #121212;
+  --dark-text-color: #FFFFFF;
+  --dark-header-bg-color: #1F1F1F;
+}
+  
+  body {
+    font-family: var(--font-family);
+    margin: 0;
+    padding-top: var(--header-height);
+    transition: background-color 0.3s, color 0.3s;
+    background: linear-gradient(135deg, var(--primary-color) 40%, var(--secondary-color) 100%);
+  }
+
+  body.dark-mode {
+    background-color: var(--dark-background-color);
+    color: var(--dark-text-color);
+  }
+
+  body.dark-mode header {
+    background-color: var(--dark-header-bg-color);
+  }
+
+
+
+  /* nav Styles */
+  #menuItems {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 150px;
+    height: 100%;
+    overflow-y: auto;
+    background: var(--secondary-color);
+    transition: right 0.5s ease;
+    z-index: 1000;
+  }
+
+  #menuItems.active {
+    right: 0;
+  }
+
+  body.dark-mode #menuItems {
+    background: var(--dark-background-color);
+  }
+  .hamburger {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 10%;
+    cursor:pointer;
+  }
+
+  .close {
+    display: block;
+    cursor: pointer;
+  }
+
+  nav ul {
+    display: block;
+    justify-content: center;
+    padding: 0;
+  }
+
+  nav ul li {
+    list-style: none;
+    padding: 0;
+    margin: 0 10px;
+  }
+
+  nav ul li a {
+    color: black;
+    padding: 10px 20px;
+    text-decoration: none;
+  }
+
+  body.dark-mode nav ul li a{
+    color: var(--dark-text-color);
+    transition: color 0.3s;
+  }
+  
+  
+  /* logo styles */
+  .logo {
+    right: 0;
+    width: 40px;
+  }
+  
+  
+  header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: var(--header-height);
+    background-color: rgba(255, 255, 255, 0.95);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+  }
+
+  header h1 {
+    font-weight: bold;
+  }
+
+
+  /* Style for the actual slider (knob) */
+  .slider {
+    position: relative;
+    top: 180%;
+    right: 0;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "Dark Mode";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: .4s;
+    border-radius: 50%;
+    font-size: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 4px;
+  }
+  
+  input:checked + .slider {
+    background-color: #2196F3;
+  }
+  
+  input:checked + .slider:before {
+    transform: translateX(26px);
+  }
+  
+  /* Additional styling to make it look nice */
+  .slider {
+    background-color: #ccc;
+    border-radius: 34px;
+  }
+  
+  input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  /* Creating the toggle switch */
+  .toggle-switch {
+    position: fixed;
+    top: 1rem;
+    width: 60px;
+    height: 34px;
+    background: #ccc;
+    border-radius: 50px;
+    cursor: pointer;
+  }
+  
+  .toggle-switch::before {
+    content: '';
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    width: 30px;
+    height: 30px;
+    background: #fff;
+    border-radius: 50%;
+    transition: transform 0.25s;
+  }
+  
+  body.dark-mode .toggle-switch::before {
+    transform: translateX(30px);
+  }
+
+  /* Dark Mode Toggle Switch */
+  .dark-mode-switch {
+    position: fixed;
+    top: 15px;
+    right: 70px;
+    display: inline-block;
+  }
+
+
+
+  main {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  main section {
+    display: inline-grid;
+  }
+
+  
+
+  /* Hero Image */
+  .heroimage div {
+    height: 200px;
+    }
+  .heroimage img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+
+
+
+  .events {
+    /* Enhanced styles */
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    margin: 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+
+  body.dark-mode .events {
+    background: var(--dark-background-color);
+  }
+
+  
+
+  .weather {
+    /* Enhanced styles */
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    margin: 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+
+  .weather h2 {
+    padding-left: 0;
+  }
+
+  body.dark-mode .weather {
+    background: var(--dark-background-color);
+  }
+  
+  #temperature, #wind-speed {
+    font-weight: bold;
+  }
+  
+  #temperature::after {
+    content: "°F";
+  }
+  
+  #wind-speed::after {
+    content: "  mph";
+  }
+  
+  #wind-chill {
+    font-weight: bold;
+  }
+
+
+  .spotlights {
+        /* Enhanced styles */
+        background: #f9f9f9;
+        padding: 20px;
+        border-radius: 8px;
+        margin: 20px;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+
+  body.dark-mode .spotlights {
+    background: var(--dark-background-color);
+  }
+
+
+
+  h2 {
+    font-size: larger;
+    font-weight: bold;
+    padding-left: 20px;
+  }
+
+  h3 {
+    font-size: large;
+    font-weight: 600;
+    padding-left: 20px;
+  }
+
+  h2 + p, h3 + p {
+    padding-left: 20px;
+  }
+
+  main p:last-of-type {
+    margin-bottom: 30px;
+  }
+
+
+/* The Modal (background) */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1001;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0,0.4);
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: white;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+body.dark-mode .modal-content {
+  background-color: var(--dark-header-bg-color);
+}
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+  .cta-section {
+    text-align: center;
+    padding: 50px;
+    background: var(--accent-color);
+    color: white;
+  }
+  
+  .cta-button {
+    display: inline-block;
+    padding: 15px 30px;
+    font-size: 1.2em;
+    background-color: var(--primary-color);
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .cta-button:hover, .cta-button:focus {
+    background-color: var(--primary-color);
+    filter: brightness(90%);
+}
+
+
+
+  footer {
+    position: fixed;
+    bottom: 0;
+    padding-left: 10px;
+    font-size: x-small;
+    color:white;
+  }
