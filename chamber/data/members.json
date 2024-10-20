@@ -1,0 +1,65 @@
+[
+    {
+      "name": "Company A",
+      "address": "123 Main St, Royse City, TX",
+      "phone": "123-456-7890",
+      "website": "http://www.companya.com",
+      "image": "companya.png",
+      "membershipLevel": "Gold",
+      "description": "Leading provider of business solutions."
+    },
+    {
+      "name": "Company B",
+      "address": "456 Elm St, Royse City, TX",
+      "phone": "987-654-3210",
+      "website": "http://www.companyb.com",
+      "image": "companyb.png",
+      "membershipLevel": "Silver",
+      "description": "Innovative tech company."
+    },
+    {
+      "name": "Company C",
+      "address": "789 Oak St, Royse City, TX",
+      "phone": "555-123-4567",
+      "website": "http://www.companyc.com",
+      "image": "companyc.png",
+      "membershipLevel": "Bronze",
+      "description": "Local retail store."
+    },
+    {
+      "name": "Company D",
+      "address": "321 Pine St, Royse City, TX",
+      "phone": "444-555-6666",
+      "website": "http://www.companyd.com",
+      "image": "companyd.png",
+      "membershipLevel": "Gold",
+      "description": "Financial services."
+    },
+    {
+      "name": "Company E",
+      "address": "654 Maple St, Royse City, TX",
+      "phone": "333-444-5555",
+      "website": "http://www.companye.com",
+      "image": "companye.png",
+      "membershipLevel": "Silver",
+      "description": "Healthcare provider."
+    },
+    {
+      "name": "Company F",
+      "address": "987 Cedar St, Royse City, TX",
+      "phone": "222-333-4444",
+      "website": "http://www.companyf.com",
+      "image": "companyf.png",
+      "membershipLevel": "Bronze",
+      "description": "Educational institution."
+    },
+    {
+      "name": "Company G",
+      "address": "159 Birch St, Royse City, TX",
+      "phone": "111-222-3333",
+      "website": "http://www.companyg.com",
+      "image": "companyg.png",
+      "membershipLevel": "Gold",
+      "description": "Real estate agency."
+    }
+  ]

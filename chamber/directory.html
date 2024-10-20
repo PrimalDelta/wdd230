@@ -48,65 +48,9 @@
 
         </header>
 
-        <main>
-
-            <section class="heroimage">
-                <div>
-                    <img
-                        srcset="../chamber/images/heroimage_small.jpg 560w,
-                                ../chamber/images/heroimage_medium.jpg 992w,
-                                ../chamber/images/heroimage.jpeg 1792w"
-                        sizes="(max-width: 600px) 560px,
-                                (max-width: 1200px) 992px,
-                                1792px"
-                        src="../chamber/images/heroimage.jpeg"
-                    alt="Royse City's Chamber of Commerce">
-                </div>
-            </section>
-            
-            <section class="events">
-
-                <h2>Upcoming Events</h2>
-                <p>Don't miss our next networking event this Friday!</p>
-                <!-- Additional events will be listed here -->
-            </section>
-
-            <section class="weather">
-                <h2>Local Weather</h2>
-                <span id="temperature">50</span>
-                <span id="wind-speed">5</span>
-                <p>Wind Chill: <span id="wind-chill">N/A</span></p>
-            </section>
-
-            <section class="spotlights">
-                <h2>Business Spotlights</h2>
-
-                <article>
-                    <h3>Company One</h3>
-                    <p>Leading the industry in innovation!</p>
-                </article>
-
-                <article>
-                    <h3>Company Two</h3>
-                    <p>Committed to community service!</p>
-                </article>
-
-                <article>
-                    <h3>Company Three</h3>
-                    <p>Award-winning designs and customer service!</p>
-                </article>
-
-            </section>
-
-            <div id="cta-modal" class="modal">
-                <div class="modal-content">
-                  <span class="close">&times;</span>
-                  <h2>Ready to Get Started?</h2>
-                  <p>Join us now and start your journey!</p>
-                  <a href="signup.html" class="cta-button">Sign Up Now</a>
-                </div>
-            </div>
-
+        <main class="grid-container">
+            <button id="toggle-view" onclick="toggleView()">Toggle View</button>
+            <section class="members-container grid-view"></section>
         </main>
 
         <footer>
@@ -121,6 +65,15 @@
         <script src="../chamber/scripts/darkmode.js"></script>
         <script src="../chamber/scripts/windchill.js"></script>
         <script src="../chamber/scripts/cta_modal.js"></script>
+        <script src="../chamber/scripts/members.js"></script>
+
+        <script>
+            function toggleView() {
+                const membersContainer = document.querySelector('.members-container');
+                membersContainer.classList.toggle('grid-view');
+                membersContainer.classList.toggle('list-view');
+            }
+        </script>
         
     </body>
 </html>

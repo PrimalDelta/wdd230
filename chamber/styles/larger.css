@@ -107,15 +107,41 @@
         font-size: small;
         justify-content: center;
         align-items: center;
-        position: fixed;
+
     }
 
     footer p {
         padding: 10px;
     }
 
-    /* Discover page CSS */
-    .discover main {
-        grid-template-columns: 1fr 4fr;
+    /* Directory for larger screens */
+
+    .member-card h3 {
+        font-size: 1.5rem;
+    }
+
+    .member-card p {
+        font-size: 1rem;
+    }
+
+    .member-card a {
+        font-size: 1rem;
+        color: #007BFF;
+        text-decoration: none;
+    }
+
+    .member-card a:hover {
+        text-decoration: underline;
+    }
+
+    #toggle-view {
+        margin: 20px;
+        padding: 5px 10px;
+        font-size: 0.9rem;
+        cursor: pointer;
+        position: fixed;
+        top: 1px;
+        right: 60rem;
+        z-index: 1001;
     }
 }
