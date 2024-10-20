@@ -1,14 +1,41 @@
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 768px) {
+    
+    main {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    #menuItems.active {
+        right: 0;
+    }
+
+    .hamburger {
+        display: none;
+    }
+
+    .close {
+        display: block;
+        cursor: pointer;
+    }
+
+    .heroimage {
+        grid-column-start: 1;
+        grid-column-end: span 2;
+    }
+
+    .heroimage div {
+        height: 300px;
+    }
 
     header {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: 0 20px;
+        padding: 15px 20px;
     }
 
     header h1 {
-        margin: 0; /* Adjust as needed */
+        margin: 0;
+        font-size: 2rem;
     }
 
     #menuItems {
@@ -23,14 +50,6 @@
         transition: none;
         overflow-y: visible;
         background-color: transparent;
-    }
-
-    .hamburger {
-        display: none;
-    }
-    
-    .close {
-        display: block;
     }
 
     body.dark-mode #menuItems {
@@ -59,35 +78,44 @@
         right: 100px;
         display: inline-block;
     }
-  
-    /* Font sizes and other element styles for larger screens */
+
     body {
-      font-size: 1.2rem;
+        font-size: 1.2rem;
     }
-  
+
+    h1 {
+        font-size: 2rem;
+    }
+
     h2 {
-      font-size: 2.5rem;
+        font-size: 2.5rem;
     }
-  
+
+    .spotlights {
+        grid-column-start: 1;
+        grid-column-end: span 2;
+        display: flex;
+        position: relative;
+    }
+
+    .spotlights p {
+        padding-right: 100px;
+    }
+
+    footer {
+        display: flex;
+        font-size: small;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
+
+    footer p {
+        padding: 10px;
+    }
 
     /* Discover page CSS */
     .discover main {
-        display: grid;
-        grid-template-columns: 1fr 300px;
-        gap: 20px;
+        grid-template-columns: 1fr 4fr;
     }
-
-    .discover main {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 30px;
-    }
-
-    .sidebar {
-        grid-column: 1 / 4;
-        grid-row: 1;
-        order: -1;
-    }
-
-  }
-  
+}
