@@ -34,7 +34,7 @@ nav a {
 }
 
 nav a:hover {
-    border: 1px solid white;
+    outline: 1px solid white;
     background-color: #004080;
 }
 
@@ -116,7 +116,7 @@ main h2 {
 }
 
 .card a:hover {
-    border: 1px solid white;
+    outline: 1px solid white;
     background-color: #004080;
 }
 
@@ -159,5 +159,5 @@ footer p {
 }
 
 #visit-counter {
-    color:white
+    color: white;
 }

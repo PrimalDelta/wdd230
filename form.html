@@ -10,6 +10,7 @@
         <link rel="stylesheet" href="styles/normalization.css">
         <link rel="stylesheet" href="styles/base.css">
         <link rel="stylesheet" href="styles/larger.css">
+        <link rel="stylesheet" href="styles/form.css">
         <link rel="icon" href="images/favicon.ico">
 
         <meta property="og:title" content="Jared Browner-Botson - WDD 230 - Web Frontend Development">
@@ -28,7 +29,7 @@
                 <li><a href="index.html">Home</a></li>
                 <li><a href="chamber/index.html">Chamber</a></li>
                 <li><a href="week01/chamber-site-plan.html">Site Plan</a></li>
-                <li><a href="index.html">Form</a></li>
+                <li><a href="form.html">Form</a></li>
             </ul>
         </nav>
         <main>
@@ -56,16 +57,6 @@
             <p>&copy;2024 - Jared Browner-Botson - Utah </p>
             <p id="lastModified"></p>
         </footer>
-        <script>
-            document.getElementById('confirm-password').addEventListener('input', function() {
-                const password = document.getElementById('password').value;
-                const confirmPassword = this.value;
-                if (password !== confirmPassword) {
-                    this.setCustomValidity('Passwords do not match');
-                } else {
-                    this.setCustomValidity('');
-                }
-            });
-        </script>
+        <script src="/scripts/confimPassword.js"></script>
     </body>
 </html>
