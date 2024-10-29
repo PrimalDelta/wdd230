@@ -161,3 +161,46 @@ footer p {
 #visit-counter {
     color: white;
 }
+
+/* Weather Section Styles */
+.weather {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 20px 0;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.weather h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.weather .temperature {
+    font-size: 2em;
+    font-weight: bold;
+    color: #ff5722;
+    display: inline-flex;
+    align-items: baseline;
+}
+
+.weather .temperature .unit {
+    font-size: 0.5em;
+    margin-left: 5px;
+}
+
+.weather .wind-speed,
+.weather .wind-chill,
+.weather .weather-description {
+    font-size: 1.2em;
+    color: #777;
+}
+
+.weather img {
+    width: 50px;
+    height: 50px;
+    margin-top: 10px;
+}

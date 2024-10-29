@@ -36,10 +36,6 @@
     background-color: var(--dark-header-bg-color);
   }
 
-  .logo {
-    border-radius: 10px;
-  }
-
   /* nav Styles */
   #menuItems {
     position: fixed;
@@ -66,11 +62,6 @@
     left: 0;
     width: 10%;
     cursor:pointer;
-  }
-
-  .close {
-    display: block;
-    cursor: pointer;
   }
 
   nav ul {
@@ -102,6 +93,7 @@
   
   /* logo styles */
   .logo {
+    border-radius: 10px;
     right: 0;
     width: 40px;
   }
@@ -346,6 +338,8 @@ body.dark-mode .modal-content {
   float: right;
   font-size: 28px;
   font-weight: bold;
+  display: block;
+  cursor: pointer;
 }
 
 .close:hover,
@@ -553,6 +547,8 @@ padding: 1rem;
 background-color: #f9f9f9;
 border: 1px solid #ccc;
 border-radius: 8px;
+margin-top: 20px;
+margin-bottom: 15px;
 }
 
 form label {
@@ -607,6 +603,8 @@ border-left: solid 8px green;
 /* Membership benefits styling */
 .membership-benefits {
 background-color: #f9f9f9;
+margin-top: 15px;
+margin-bottom: 15px;
 padding: 1rem;
 border: 1px solid #ccc;
 border-radius: 8px;
@@ -665,7 +663,6 @@ body.dark-mode form input:required:valid {
   border-left: solid 8px green;
 }
 
-/* Dark mode styles for membership benefits */
 body.dark-mode .membership-benefits {
   background-color: var(--dark-header-bg-color);
   border-color: var(--dark-header-bg-color);
