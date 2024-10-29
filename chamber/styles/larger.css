@@ -1,8 +1,7 @@
 @media screen and (min-width: 960px) {
     
     main {
-        display: grid;
-        justify-items: center;
+        grid-template-columns: repeat(2, 1fr);
     }
 
     #menuItems.active {
@@ -117,9 +116,56 @@
 
 
 
+    /* Form for larger screens */
+    .join-main {
+        /* Add your custom styles here */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .form-container {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .form-container form {
+        flex: 1;
+        margin-right: 20px;
+    }
+
+    .membership-benefits {
+        flex: 1;
+        max-width: 400px;
+    }
+
+
+    .form-container {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .form-container form {
+        flex: 1;
+        margin-right: 20px;
+    }
+
+    .membership-benefits {
+        flex: 1;
+        max-width: 400px;
+    }
+
+
+
 
 
     /* Directory for larger screens */
+
+    .directory-main {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 
     .member-card h3 {
         font-size: 1.5rem;
@@ -148,38 +194,5 @@
         top: 1px;
         right: 60rem;
         z-index: 1001;
-    }
-
-
-
-    .form-container {
-        display: flex;
-        justify-content: space-between;
-    }
-
-    .form-container form {
-        flex: 1;
-        margin-right: 20px;
-    }
-
-    .membership-benefits {
-        flex: 1;
-        max-width: 400px;
-    }
-
-
-    .form-container {
-        display: flex;
-        justify-content: space-between;
-    }
-
-    .form-container form {
-        flex: 1;
-        margin-right: 20px;
-    }
-
-    .membership-benefits {
-        flex: 1;
-        max-width: 400px;
     }
 }
