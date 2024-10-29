@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Description for the Chamber of Commerce.">
+    <meta name="author" content="Jared Browner-Botson">
+    <meta property="og:title" content="Royse City Chamber of Commerce and Discover">
+    <meta property="og:type" content="website">
+    <meta property="og:description" content="Join Royse City's Chamber of Commerce to connect with local businesses and grow your network.">
+    <meta property="og:image" content="images/social-preview.webp">
+    <meta property="og:url" content="https://primaldelta.github.io/wdd230/chamber/index.html">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Royse City's Chamber of Commerce">
+    <meta name="twitter:description" content="Join Royse City's Chamber of Commerce to connect with local businesses and grow your network.">
+    <meta name="twitter:image" content="/chamber/images/heroimage.jpeg">
+    <title>Royse City's Chamber of Commerce</title>
+    <link rel="stylesheet" href="../chamber/styles/normalization.css">
+    <link rel="stylesheet" href="../chamber/styles/base.css">
+    <link rel="stylesheet" href="../chamber/styles/larger.css" media="screen and (min-width: 960px)">
+    <link rel="icon" href="../chamber/images/favicon.ico">
+</head>
+<body>
+
+    <header>
+        <h1>Royse City's Chamber of Commerce</h1>
+        <div class="hamburger-menu">
+            <button class="hamburger" onclick="toggleMenu()">☰</button>
+            <nav id="menuItems">
+                <ul class="containter">
+                    <li><a href="../chamber/index.html">Home</a></li>
+                    <li><a href="../chamber/discover.html">Discover</a></li>
+                    <li><a href="../chamber/directory.html">Directory</a></li>
+                    <li><a href="../chamber/join.html">Join Us</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <picture class="logo">
+            <source srcset="../chamber/images/social-preview.webp" type="image/webp">
+            <img src="../chamber/images/social-preview.webp" alt="Chamber Logo">
+        </picture>
+
+        <label class="dark-mode-switch">
+            <input type="checkbox" id="dark-mode-toggle">
+            <span class="slider round"></span>
+        </label>
+
+    </header>
+
+    <main>
+        <div class="form-container">
+            <form method="get" action="thanks.html">
+                <fieldset>
+                    <legend>Applicant Information</legend>
+                    <label for="fname">First Name* 
+                        <input type="text" id="fname" name="fname" required>
+                    </label>
+                    <label for="lname">Last Name* 
+                        <input type="text" id="lname" name="lname" required>
+                    </label>
+                    <label for="title">Title or Position 
+                        <input type="text" id="title" name="title" required>
+                    </label>
+                    <label for="email">Email Address* 
+                        <input type="email" id="email" name="email" placeholder="someone@gmail.com" required>
+                    </label>
+                    <label for="phone">Mobile Phone Number 
+                        <input type="tel" id="phone" name="phone" placeholder="1235551234" required>
+                    </label>
+                    <label for="bname">Business/Organization's Name 
+                        <input type="text" id="bname" name="bname" required>
+                    </label>
+                    <label for="bdescription">Business/Organization Description 
+                        <textarea id="bdescription" name="bdescription" required></textarea>
+                    </label>
+                </fieldset>
+            
+                <fieldset>
+                    <legend>Membership Status</legend>
+                    <div>Select Membership</div>
+                    <label>
+                        <input type="radio" name="membership" value="nonprofit"> Non Profit Membership (No fee)
+                    </label>
+                    <label>
+                        <input type="radio" name="membership" value="bronze"> Bronze Membership
+                    </label>
+                    <label>
+                        <input type="radio" name="membership" value="silver"> Silver Membership
+                    </label>
+                    <label>
+                        <input type="radio" name="membership" value="gold"> Gold Membership
+                    </label>
+                </fieldset>
+            
+                <input type="hidden" id="timestamp" name="timestamp" value="">
+                <input type="submit" value="Submit">
+            </form>
+
+            <aside class="membership-benefits">
+                <h2>Membership Benefits</h2>
+                <ul>
+                    <li><strong>Non Profit Membership:</strong> Access to community events, networking opportunities.</li>
+                    <li><strong>Bronze Membership:</strong> All Non Profit benefits plus business listing on our website.</li>
+                    <li><strong>Silver Membership:</strong> All Bronze benefits plus promotional opportunities.</li>
+                    <li><strong>Gold Membership:</strong> All Silver benefits plus premium event sponsorships.</li>
+                </ul>
+            </aside>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Royse City's Chamber of Commerce. All Rights Reserved.</p>
+        <p>Contact us at <a href="mailto:contact@chamberofcommerce.com">contact@chamberofcommerce.com</a></p>
+        <p>Project for WDD 230 by Jared Browner-Botson</p>
+        <p>Last Modified: <span id="last-modified-date">[Date will be loaded]</span></p>
+    </footer>
+
+    <script src="../chamber/scripts/getdates.js"></script>
+    <script src="../chamber/scripts/togglemenu.js"></script>
+    <script src="../chamber/scripts/darkmode.js"></script>
+    <script src="../chamber/scripts/windchill.js"></script>
+    <script src="../chamber/scripts/cta_modal.js"></script>
+    <script>
+        document.getElementById('timestamp').value = new Date().toISOString();
+    </script>
+    
+</body>
+</html>

@@ -1,7 +1,8 @@
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 960px) {
     
     main {
-        grid-template-columns: repeat(2, 1fr);
+        display: grid;
+        justify-items: center;
     }
 
     #menuItems.active {
@@ -114,6 +115,10 @@
         padding: 10px;
     }
 
+
+
+
+
     /* Directory for larger screens */
 
     .member-card h3 {
@@ -143,5 +148,38 @@
         top: 1px;
         right: 60rem;
         z-index: 1001;
+    }
+
+
+
+    .form-container {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .form-container form {
+        flex: 1;
+        margin-right: 20px;
+    }
+
+    .membership-benefits {
+        flex: 1;
+        max-width: 400px;
+    }
+
+
+    .form-container {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .form-container form {
+        flex: 1;
+        margin-right: 20px;
+    }
+
+    .membership-benefits {
+        flex: 1;
+        max-width: 400px;
     }
 }
