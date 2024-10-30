@@ -15,7 +15,7 @@ async function fetchMembers() {
         const spotlightMembers = membersData.filter(member => member.membershipLevel.toLowerCase() === 'silver' || member.membershipLevel.toLowerCase() === 'gold');
         console.log('Spotlight members:', spotlightMembers);
 
-        spotlightMembers.slice(0, 3).forEach(member => {
+        spotlightMembers.slice(0, 2).forEach(member => {
             const memberArticle = document.createElement('article');
             memberArticle.innerHTML = `
                 <h3>${member.name}</h3>

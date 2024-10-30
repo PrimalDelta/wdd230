@@ -244,7 +244,13 @@
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
   }
 
-  .weather h2 {
+  .weather ul {
+    list-style-type: none;
+    text-align: left;
+    padding: 0;
+  }
+
+  .weather h2, .weather h3 {
     padding-left: 0;
   }
 
@@ -296,6 +302,37 @@
   background-color: #fff;
   border-radius: 8px;
   margin: 10px;
+}
+
+/* Dark mode for spotlights */
+body.dark-mode .spotlights {
+  background-color: #333;
+  color: #fff;
+}
+
+/* Align spotlights horizontally */
+.spotlights {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.spotlights h2 {
+  width: 100%;
+  text-align: center;
+}
+
+.spotlights #spotlight-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+body.dark-mode .spotlights article {
+  background-color: var(--dark-header-bg-color);
+  color: var(--dark-text-color);
+  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
 }
 
   body.dark-mode .spotlights {
