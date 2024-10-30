@@ -77,19 +77,18 @@
                 </fieldset>
             
                 <fieldset>
-                    <legend>Membership Status</legend>
-                    <div>Select Membership</div>
-                    <label>
-                        <input type="radio" name="membership" value="nonprofit"> Non Profit Membership (No fee)
+                    <legend>Please Select Membership Status</legend>
+                    <label for="nonprofit">
+                        <input type="radio" id="nonprofit" name="membership" value="nonprofit"> Non Profit Membership (No fee)
                     </label>
-                    <label>
-                        <input type="radio" name="membership" value="bronze"> Bronze Membership
+                    <label for="bronze">
+                        <input type="radio" id="bronze" name="membership" value="bronze"> Bronze Membership
                     </label>
-                    <label>
-                        <input type="radio" name="membership" value="silver"> Silver Membership
+                    <label for="silver">
+                        <input type="radio" id="silver" name="membership" value="silver"> Silver Membership
                     </label>
-                    <label>
-                        <input type="radio" name="membership" value="gold"> Gold Membership
+                    <label for="gold">
+                        <input type="radio" id="gold" name="membership" value="gold"> Gold Membership
                     </label>
                 </fieldset>
             
@@ -122,7 +121,22 @@
     <script src="../chamber/scripts/cta_modal.js"></script>
     <script>
         document.getElementById('timestamp').value = new Date().toISOString();
+
+        document.addEventListener('DOMContentLoaded', () => {
+            const membershipOptions = document.querySelectorAll('input[name="membership"]');
+            
+            membershipOptions.forEach(option => {
+                option.addEventListener('change', () => {
+                    // Remove 'selected' class from all labels
+                    membershipOptions.forEach(opt => {
+                        document.querySelector(`label[for="${opt.id}"]`).classList.remove('selected');
+                    });
+                    
+                    // Add 'selected' class to the selected label
+                    document.querySelector(`label[for="${option.id}"]`).classList.add('selected');
+                });
+            });
+        });
     </script>
-    
 </body>
 </html>

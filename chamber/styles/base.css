@@ -445,11 +445,6 @@ footer {
 
 
 
-
-
-
-
-
 /* Discover Page Styles */
 .discover main {
   display: grid;
@@ -699,6 +694,14 @@ body.dark-mode .membership-benefits {
   background-color: var(--dark-header-bg-color);
   border-color: var(--dark-header-bg-color);
   color: var(--dark-text-color);
+}
+
+
+label.selected {
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+  border-radius: 4px;
+  padding: 5px;
 }
 
 
