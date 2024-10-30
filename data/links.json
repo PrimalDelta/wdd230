@@ -1,67 +1,45 @@
 {
-    "weeks": [
-      {
-        "week": "Week 1",
-        "links": [
-          {
-            "url": "/week01/holygrail.html", "title": "HG Layout"
-          },
-          {
-            "url": "/week01/media-query.html", "title": "mQueries"
-          }
-        ],
-        "activities": []
-      },
-      {
-        "week": "Week 2",
-        "links": [
-          {
-            "url": "/week02/bom.html", "title": "Book of Mormon"
-          },
-          {
-            "url": "/week02/design.html", "title": "Design"
-          }
-        ],
-        "activities": []
-      },
-      {
-        "week": "Week 3",
-        "links": [
-          {
-            "url": "/week03/lazyload.html", "title": "Lazy loading images"
-          },
-          {
-            "url": "/week03/responsive-images.html", "title": "Responsive images"
-          }
-        ],
-        "activities": []
-      },
-      {
-        "week": "Week 4",
-        "links": [
-          {
-            "url": "/week04/form-start/index.html", "title": "Forms"
-          },
-          {
-            "url": "/week04/tablebuild.html", "title": "Tablebuild"
-          }
-          {
-            "url": "https://codepen.io/PrimalDelta/pen/PoMEZyd", "title": "Codepen"
-          }
-        ],
-        "activities": []
-      },
-      {
-        "week": "Week 5",
-        "links": [
-          {
-            "url": "/week5/activity1.html", "title": ""
-          },
-          {
-            "url": "/week5/activity2.html", "title": ""
-          }
-        ],
-        "activities": []
-      }
-    ]
-  }
+  "weeks": [
+    {
+      "week": "Week 1",
+      "links": [
+        { "url": "/week01/holygrail.html", "title": "HG Layout" },
+        { "url": "/week01/media-query.html", "title": "mQueries" }
+      ],
+      "activities": []
+    },
+    {
+      "week": "Week 2",
+      "links": [
+        { "url": "/week02/bom.html", "title": "Book of Mormon" },
+        { "url": "/week02/design.html", "title": "Design" }
+      ],
+      "activities": []
+    },
+    {
+      "week": "Week 3",
+      "links": [
+        { "url": "/week03/lazyload.html", "title": "Lazy loading images" },
+        { "url": "/week03/responsive-images.html", "title": "Responsive images" }
+      ],
+      "activities": []
+    },
+    {
+      "week": "Week 4",
+      "links": [
+        { "url": "/week04/form-start/index.html", "title": "Forms" },
+        { "url": "/week04/tablebuild.html", "title": "Tablebuild" },
+        { "url": "https://codepen.io/PrimalDelta/pen/PoMEZyd", "title": "Codepen" }
+      ],
+      "activities": []
+    },
+    {
+      "week": "Week 5",
+      "links": [
+        { "url": "/week5/activity1.html", "title": "" },
+        { "url": "/week5/activity2.html", "title": "" }
+      ],
+      "activities": []
+    }
+  ]
+}

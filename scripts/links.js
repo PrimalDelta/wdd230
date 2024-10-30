@@ -5,10 +5,10 @@ async function getLinks() {
     try {
         const response = await fetch(linksURL);
         if (!response.ok) {
-            throw new Error('Network response was not ok');
+            throw new Error(`Network response was not ok: ${response.statusText}`);
         }
         const data = await response.json();
-        console.log(data);
+        console.log('Fetched data:', data);
         if (Array.isArray(data.weeks)) {
             displayLinks(data.weeks);
         } else {
@@ -21,8 +21,15 @@ async function getLinks() {
 
 // Function to build out the available activity links
 function displayLinks(weeks) {
+    console.log('displayLinks called with weeks:', weeks); // Log weeks data
     const learningActivitiesCard = document.querySelector('#learning-activities');
+    console.log('learningActivitiesCard:', learningActivitiesCard); // Log the selected element
     
+    if (!learningActivitiesCard) {
+        console.error('Element with id "learning-activities" not found');
+        return;
+    }
+
     weeks.forEach(week => {
         const h3 = document.createElement('h3');
         h3.textContent = week.week;
