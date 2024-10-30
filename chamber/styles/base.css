@@ -270,12 +270,33 @@
 
 
   .spotlights {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 20px;
     background: lightgray;
     padding: 20px;
     border-radius: 8px;
     margin: 20px;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
   }
+
+  .spotlights img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.spotlights article {
+  flex: 1 1 calc(33.333% - 40px); /* Adjust the width as needed */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+  background-color: #fff;
+  border-radius: 8px;
+  margin: 10px;
+}
 
   body.dark-mode .spotlights {
     background: var(--dark-background-color);
@@ -402,48 +423,9 @@ footer {
   justify-items: center;
 }
 
-.discover .sidebar {
-  background: #fff;
-  padding: 15px;
-  margin-bottom: 20px;
-  border-radius: 10px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  text-align: center;
-  left: 0;
-  right: auto;
-  position: fixed;
-  top: var(--header-height);
-  height: calc(100% - var(--header-height));
-}
-
-.discover .sidebar-content h2 {
-  font-size: 1.2em;
-  margin-top: 20px;
-}
-
-.discover .sidebar-content p {
-  font-size: 1em;
-  margin-top: 10px;
-}
-
-.discover main figure img {
-  width: 150px;
-  height: auto;
-  transition: box-shadow 0.8s ease;
-}
-
-.discover main figure img:hover {
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.6);
-}
-
-.discover .visit-message {
-  font-weight: bold;
-  margin-bottom: 20px;
-}
-
-.discover main figcaption {
-  margin-top: 8px;
-  font-style: italic;
+.sidebar-content ul {
+  list-style-type: none;
+  padding: 0;
 }
 
 #sidebarToggle {
@@ -745,4 +727,99 @@ body.dark-mode .membership-benefits {
   background-color: #333;
   text-align: center;
   position: relative;
+}
+
+
+.banner {
+  display: none; /* Initially hidden */
+  background-color: #FFD700;
+  color: #000;
+  text-align: center;
+  padding: 10px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1002;
+}
+
+.banner p {
+  margin: 0;
+  font-size: 1.2rem;
+}
+
+.close-banner {
+  cursor: pointer;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  font-size: 1.2rem;
+}
+
+
+.calendar {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  font-family: Arial, sans-serif;
+}
+
+.month {
+  text-align: center;
+  padding: 20px 0;
+  background: #333;
+  color: white;
+}
+
+.month ul {
+  margin: 0;
+  padding: 0;
+}
+
+.month ul li {
+  display: inline-block;
+  font-size: 20px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+.month .prev, .month .next {
+  cursor: pointer;
+}
+
+.weekdays {
+  margin: 0;
+  padding: 10px 0;
+  background: #ddd;
+}
+
+.weekdays li {
+  display: inline-block;
+  width: 13.6%;
+  text-align: center;
+}
+
+.days {
+  padding: 10px 0;
+  background: #eee;
+  margin: 0;
+}
+
+.days li {
+  list-style-type: none;
+  display: inline-block;
+  width: 13.6%;
+  text-align: center;
+  margin-bottom: 5px;
+  font-size: 12px;
+  color: #777;
+}
+
+.days li:hover {
+  background: #ddd;
+  cursor: pointer;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
 }

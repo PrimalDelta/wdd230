@@ -59,17 +59,115 @@
             </section>
             <aside class="sidebar">
                 <section class="sidebar-content">
-                    <h2>Demographics</h2>
-                    <p>Placeholder for demographics information.</p>
+                    <div>
+                        <h2>Royse City Demographics</h2>
+                        <ul>
+                            <li><strong>Total Population:</strong> 18,982</li>
+                            <li><strong>Population in Households:</strong> 18,898 (99.6%)</li>
+                            <li><strong>Population Density:</strong> 988 people per square mile</li>
+                            <li><strong>Median Household Income:</strong> $110,171</li>
+                            <li><strong>Per Capita Income:</strong> $40,202</li>
+                            <li><strong>Housing Units:</strong> 6,362, with 83.8% owner-occupied</li>
+                            <li><strong>Median Home Value:</strong> $332,718</li>
+                            <li><strong>Average Household Size:</strong> 3.09</li>
+                            <li><strong>Diversity Index:</strong> 71 (on a scale of 0-100)</li>
+                        </ul>
+                    </div>
                     
-                    <h2>Statistical Data</h2>
-                    <p>Placeholder for statistical data.</p>
+                    <div>
+                        <h2>Statistical Data</h2>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Statistic</th>
+                                    <th>Value</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><strong>Total Population</strong></td>
+                                    <td>18,982</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Population in Households</strong></td>
+                                    <td>18,898 (99.6%)</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Population Density</strong></td>
+                                    <td>988 people per square mile</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Median Household Income</strong></td>
+                                    <td>$110,171</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Average Household Income</strong></td>
+                                    <td>$124,901</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Per Capita Income</strong></td>
+                                    <td>$40,202</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Total Housing Units</strong></td>
+                                    <td>6,362</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Owner Occupied Housing Units</strong></td>
+                                    <td>5,332 (83.8%)</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Median Home Value</strong></td>
+                                    <td>$332,718</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Diversity Index</strong></td>
+                                    <td>71 (scale 0-100)</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Largest Age Group</strong></td>
+                                    <td>25-29 years (10.3% of population)</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Population Over 65 Years</strong></td>
+                                    <td>7.08%</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Average Household Size</strong></td>
+                                    <td>3.09</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    
                     
                     <h2>Events</h2>
-                    <p>Placeholder for events information.</p>
+                    <p>No upcoming events this week. Have a great day!</p>
                     
                     <h2>Calendar</h2>
-                    <p>Placeholder for calendar information.</p>
+                    <div class="calendar">
+                        <div class="month">
+                            <ul>
+                                <li class="prev" onclick="prevMonth()">&#10094;</li>
+                                <li class="next" onclick="nextMonth()">&#10095;</li>
+                                <li id="monthYear"></li>
+                            </ul>
+                        </div>
+                    
+                        <ul class="weekdays">
+                            <li>Mo</li>
+                            <li>Tu</li>
+                            <li>We</li>
+                            <li>Th</li>
+                            <li>Fr</li>
+                            <li>Sa</li>
+                            <li>Su</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <ul class="days" id="days">
+                        </ul>
+                    </div>
                 </section>
             </aside>
 
@@ -89,6 +187,7 @@
         <script src="../chamber/scripts/darkmode.js"></script>
         <script src="../chamber/scripts/windchill.js"></script>
         <script src="../chamber/scripts/cta_modal.js"></script>
+        <script src="../chamber/scripts/calandar.js"></script>
         
     </body>
 </html>
