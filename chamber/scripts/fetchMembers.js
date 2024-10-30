@@ -1,12 +1,12 @@
 async function fetchMembers() {
-    const membersUrl = '../data/members.json';
+    const membersUrl = 'https://primaldelta.github.io/wdd230/chamber/data/members.json';
 
     try {
         const response = await fetch(membersUrl);
         const membersData = await response.json();
 
         const spotlightContainer = document.getElementById('spotlight-container');
-        spotlightContainer.innerHTML = ''; // Clear any existing content
+        spotlightContainer.innerHTML = '';
 
         const spotlightMembers = membersData.filter(member => member.membershipLevel === 'silver' || member.membershipLevel === 'gold');
 
