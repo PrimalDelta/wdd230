@@ -223,7 +223,7 @@
 
 
   .events {
-    background: #f9f9f9;
+    background: lightgray;
     padding: 20px;
     border-radius: 8px;
     margin: 20px;
@@ -237,7 +237,7 @@
   
 
   .weather {
-    background: #f9f9f9;
+    background: lightgray;
     padding: 20px;
     border-radius: 8px;
     margin: 20px;
@@ -270,7 +270,7 @@
 
 
   .spotlights {
-    background: #f9f9f9;
+    background: lightgray;
     padding: 20px;
     border-radius: 8px;
     margin: 20px;
